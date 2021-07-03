@@ -102,6 +102,8 @@ With main node running you'll have to feed a rosbag file with the images, altern
 # 5. Processing your own sequences
 You will need to create a settings file with the calibration of your camera. See the settings file provided as examples. We use the calibration model of OpenCV. See the examples to learn how to create a program that makes use of the ORB-SLAM2-E library and how to pass images to the SLAM system. 
 
+
+
 # 6. SLAM and Localization Modes
 You can change between the *SLAM* and *Localization mode* using the GUI of the map viewer.
 
@@ -111,6 +113,7 @@ This is the default mode. The system runs in parallal three threads: Tracking, L
 ### Localization Mode
 This mode can be used when you have a good map of your working area. In this mode the Local Mapping and Loop Closing are deactivated. The system localizes the camera in the map (which is no longer updated), using relocalization if needed. 
 
-# 7. Deformable model
-You can enable "FEA" so the Finite Element Model is represented in both the map and the image. Also if you enable *Debug Mode" extra information about the process and deformation data is displayed in the terminal. 
+### Deformable model
+You can enable "FEA" so the Finite Element Model is represented in both the map and the image. 
+If you enable *Debug Mode" extra information about the process and deformation data is displayed in the terminal. 
 
